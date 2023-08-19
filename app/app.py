@@ -18,9 +18,9 @@ if DBPORT is not None:
         DBPORT = int(DBPORT)
     except ValueError:
         print("Invalid value for DBPORT. Using default port.")
-        DBPORT = "3306"
+        DBPORT = 3306
 else:
-    DBPORT = "3306"
+    DBPORT = 3306
 
 # Create a connection to the MySQL database
 db_conn = connections.Connection(
